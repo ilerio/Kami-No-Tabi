@@ -1,0 +1,561 @@
+fileFormatVersion: 2
+guid: ff743b70dda89a544af2a56b22a25bfc
+timeCreated: 1447267465
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: A
+    21300002: I
+    21300004: O
+    21300006: U
+    21300008: E
+    21300010: Ka
+    21300012: Ki
+    21300014: Ku
+    21300016: Ke
+    21300018: Ko
+    21300020: Sa
+    21300022: Shi
+    21300024: Su
+    21300026: Se
+    21300028: So
+    21300030: Chi
+    21300032: Tsu
+    21300034: Te
+    21300036: To
+    21300038: Ta
+    21300040: Na
+    21300042: Ni
+    21300044: Nu
+    21300046: Ne
+    21300048: No
+    21300050: Ha
+    21300052: Hi
+    21300054: Hu
+    21300056: He
+    21300058: Ho
+    21300060: Ma
+    21300062: Mi
+    21300064: Mu
+    21300066: Me
+    21300068: Mo
+    21300070: Ya
+    21300072: Yu
+    21300074: Yo
+    21300076: Ri
+    21300078: Ru
+    21300080: Re
+    21300082: Ro
+    21300084: Ra
+    21300086: Wa
+    21300088: Wo
+    21300090: N
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: A
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1299
+        width: 99
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: I
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1306
+        width: 105
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: O
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 1296
+        width: 104
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: U
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1299
+        width: 78
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: E
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1302
+        width: 98
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ka
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1158
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ki
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1158
+        width: 94
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ku
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1158
+        width: 67
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ke
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1159
+        width: 102
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ko
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1166
+        width: 81
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sa
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1020
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shi
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1022
+        width: 82
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Su
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1017
+        width: 101
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Se
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1023
+        width: 105
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: So
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1020
+        width: 100
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chi
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 880
+        width: 92
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tsu
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 888
+        width: 102
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Te
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 879
+        width: 97
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: To
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 881
+        width: 84
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ta
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 882
+        width: 98
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Na
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 739
+        width: 98
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ni
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 742
+        width: 96
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Nu
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 741
+        width: 106
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ne
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 739
+        width: 107
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: No
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 743
+        width: 104
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ha
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 602
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hi
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 602
+        width: 108
+        height: 97
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hu
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 601
+        width: 106
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: He
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 614
+        width: 111
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ho
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 603
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ma
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 461
+        width: 91
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mi
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 460
+        width: 108
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mu
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 462
+        width: 103
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Me
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 461
+        width: 103
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mo
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 462
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ya
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 319
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Yu
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 319
+        width: 99
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Yo
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 321
+        width: 92
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ri
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 181
+        width: 72
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ru
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 180
+        width: 94
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Re
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 181
+        width: 109
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ro
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 181
+        width: 93
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ra
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 180
+        width: 84
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wa
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 41
+        width: 104
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wo
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 42
+        width: 100
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: N
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 42
+        width: 108
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

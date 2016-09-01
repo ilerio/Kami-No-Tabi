@@ -1,0 +1,21 @@
+
+> The hiragana chart is a temporary sprite.
+
+> More buttons/options need to be added to the menus?
+
+> No iPhone implamentation yet.
+
+> Look into redoing hiragana selection method for level 1 as this is currently not a good
+
+> implementation; due to randomness you get variable performance. 
+<^sugest: preselect hiragana then put in a stack>
+
+>
+
+
+/*
+-- Questions for NINA
+- What image do you want to use for the Hiragana chart?
+- 
+- 
+*/

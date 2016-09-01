@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<cross-domain-policy>
+	<allow-access-from domain="*"/>
+	<allow-access-from domain="http://176.32.230.51/edugame.com/"/>
+	<allow-access-from domain="localhost"/>
+</cross-domain-policy>
