@@ -116,13 +116,15 @@ public class GameControllerDnDHiragana : MonoBehaviour
 		Color colorRed;
 		colorRed = Color.red;
 		colorRed.a = 0.393f;
-		Transform[] wrong = new Transform[wrongSpots.Count];
+		Transform[] wrong = new Transform[46];
 
 		while(wrongSpots.Count > 0)
 		{
 			int cur = wrongSpots.Pop();
+			Debug.Log("cur: " + cur);
+			Debug.Log("slots[cur:] " + slots[cur]);
 			slots[cur].GetComponent<Image>().color = colorRed;
-			if (slots[cur].transform.childCount != 0)
+			if (slots[cur].transform.childCount > 0)
 			{
 				wrong[cur] = slots[cur].transform.GetChild(0);
 			}

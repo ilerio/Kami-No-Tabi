@@ -3,25 +3,25 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-public class GamecontrollerDnDKatakana : MonoBehaviour 
+public class GamecontrollerDnDKatakana : MonoBehaviour
 {
 	public Transform holder;
 	public GameObject[] slots;
 	public bool AllFilledIn = false;
-	
+
 	private string[] inputHiragana;
 	private string[] correctHiragana; // The corect sequence of hiragana
 	private Stack<int> wrongSpots = new Stack<int>();
-	
+
 	void Awake()
 	{
 		inputHiragana = new string[46];
-		
+
 		for(int i = 0; i < inputHiragana.Length; i++)
 			inputHiragana[i] = "?";
-		
+
 		correctHiragana = new string[46];
-		
+
 		correctHiragana[0] = "A";
 		correctHiragana[1] = "I";
 		correctHiragana[2] = "U";
@@ -69,14 +69,14 @@ public class GamecontrollerDnDKatakana : MonoBehaviour
 		correctHiragana[44] = "Wo";
 		correctHiragana[45] = "N";
 	}
-	
+
 	public bool CheckWinState()
 	{
 		bool pass = true;
 		int i = 0;
-		
+
 		string temp = ""; // debug
-		
+
 		while(i < 46)
 		{
 			if (inputHiragana[i].CompareTo(correctHiragana[i]) != 0)
@@ -84,20 +84,20 @@ public class GamecontrollerDnDKatakana : MonoBehaviour
 				pass = false;
 				wrongSpots.Push(i);
 			}
-			
+
 			temp += "[" + inputHiragana[i] + "]"; // debug
-			
+
 			i++;
 		}
-		
+
 		Debug.Log(temp);
-		
+
 		if (pass == true)
 			return true;
 		else
 			return false;
 	}
-	
+
 	public void setInputHirgana(int pos, string name)
 	{
 		inputHiragana[pos] = name;
@@ -107,17 +107,17 @@ public class GamecontrollerDnDKatakana : MonoBehaviour
 		{
 			if (s == "?"){temp = false;}
 		}
-		
+
 		if (temp == true) {AllFilledIn = true;}
 	}
-	
+
 	public void WrongAnswer()
 	{
 		Color colorRed;
 		colorRed = Color.red;
 		colorRed.a = 0.393f;
-		Transform[] wrong = new Transform[wrongSpots.Count];
-		
+		Transform[] wrong = new Transform[46];
+
 		while(wrongSpots.Count > 0)
 		{
 			int cur = wrongSpots.Pop();
@@ -127,7 +127,7 @@ public class GamecontrollerDnDKatakana : MonoBehaviour
 				wrong[cur] = slots[cur].transform.GetChild(0);
 			}
 		}
-		
+
 		foreach(Transform h in wrong)
 		{
 			if (h != null)
