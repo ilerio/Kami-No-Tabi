@@ -13,16 +13,18 @@ public class NextScene : MonoBehaviour
 
 	public void LoadSceneChoice()
 	{
+		PlayerPrefs.SetInt("Level_01",1);
+
 		ui.SetActive (false);
 
 		LoadingScreen ls = GameObject.FindObjectOfType (typeof (LoadingScreen)) as LoadingScreen;
 		ls.LoadScene(sceneChoice);
 	}
 
-	public void LoadNextScene()
+	/*public void LoadNextScene()
 	{
 		Application.LoadLevel(Application.loadedLevel + 1);
-	}
+	}*/
 
 	public void Credits()
 	{

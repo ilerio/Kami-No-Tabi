@@ -30,6 +30,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_03.unity
   - enabled: 1
+    path: Assets/Scenes/Level_03_Transition.unity
+  - enabled: 1
     path: Assets/Scenes/Story_End.unity
   - enabled: 1
     path: Assets/Scenes/Credits.unity

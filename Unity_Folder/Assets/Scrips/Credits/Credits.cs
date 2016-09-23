@@ -3,18 +3,18 @@ using System.Collections;
 
 public class Credits : MonoBehaviour 
 {
-	public int speed = 1;
-	public int endpos; 
+	public float speed = 1f;
 	public AudioSource musicPlayer;
 
 	private float quit = 1f;
 	private bool fadeBegun = false;
+	private bool exit = false;
 
 	void Update () 
 	{
 		this.transform.Translate(Vector3.up * Time.deltaTime * speed);
 
-		if(this.transform.position.y > endpos)
+		if(exit)
 		{
 			musicPlayer.volume = musicPlayer.volume - (Time.deltaTime);
 			quit = quit - (Time.deltaTime);
@@ -25,7 +25,11 @@ public class Credits : MonoBehaviour
 				Invoke("BackToMainMenu",0.001f);
 			}
 		}
+	}
 
+	void OnTriggerExit2D(Collider2D col)
+	{
+		exit = true;
 	}
 
 	public void beginFade()
