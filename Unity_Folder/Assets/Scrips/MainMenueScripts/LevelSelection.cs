@@ -21,9 +21,6 @@ public class LevelSelection : MonoBehaviour
 		lsPanel.SetActive (false);
 		isDisplayed = false;
 
-		//Not yet made
-		level_03.SetActive(false);
-
 		if (PlayerPrefs.GetInt("Level_01") == 1)
 		{
 			level_01.SetActive(true); 

@@ -65,7 +65,7 @@ public class Lock_Katakana : MonoBehaviour
 	{
 		Destroy(UI.gameObject);
 
-		PlayerPrefs.SetInt("DnD_Katakana", 1);
+		PlayerPrefs.SetInt("Level_03", 1);
 		
 		LoadingScreen ls = GameObject.FindObjectOfType (typeof (LoadingScreen)) as LoadingScreen;
 		ls.LoadScene("DnD_Katakana_Transition");

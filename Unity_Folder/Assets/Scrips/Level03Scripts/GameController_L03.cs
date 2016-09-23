@@ -194,8 +194,6 @@ public class GameController_L03 : MonoBehaviour
 	{
 		Debug.Log("Win");
 
-		PlayerPrefs.SetInt("Level_03", 1);
-
 		UI_Interface.SetActive(false);
 		UI_DnD.SetActive(false);
 		Pause_Menue.SetActive(false);

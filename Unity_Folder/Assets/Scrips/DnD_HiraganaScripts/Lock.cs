@@ -65,7 +65,7 @@ public class Lock : MonoBehaviour
 	{
 		Destroy(UI.gameObject);
 
-		PlayerPrefs.SetInt("DnD_Hiragana",1);
+		PlayerPrefs.SetInt("Level_02",1);
 
 		LoadingScreen ls = GameObject.FindObjectOfType (typeof (LoadingScreen)) as LoadingScreen;
 		ls.LoadScene("DnD_Hiragana_Transition");

@@ -329,7 +329,7 @@ public class L01Transition : MonoBehaviour
 		
 		fade.BeginFade(-1);
 		
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(3f);
 
 		ls.LoadScene("DnD_Hiragana");
 	}

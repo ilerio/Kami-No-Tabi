@@ -43,9 +43,9 @@ public class Words : MonoBehaviour
 		words["newspaper"] = word;
 		word = new string[]{"ノ","ー","ト"};
 		words["notebook"] = word;
-		word = new string[]{"ぺ","ん"};
+		word = new string[]{"ペ","ン"};
 		words["pen"] = word;
-		word = new string[]{"え","ん","び","つ"};
+		word = new string[]{"え","ん","ぴ","つ"};
 		words["pencil"] = word;
 		word = new string[]{"ご","は","ん"};
 		words["rice"] = word;

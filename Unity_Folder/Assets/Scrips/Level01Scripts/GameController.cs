@@ -120,7 +120,6 @@ public class GameController : MonoBehaviour // to debug uncomment all debug.log 
 		{
 			while (done != true) 
 			{
-
 				randomNumber = Random.Range (0, hiragana.Length);
 				//Debug.Log ("[GC_HiraganaSetup] randomNumber = " + randomNumber);
 				if (randomNumber != answer)
@@ -130,10 +129,13 @@ public class GameController : MonoBehaviour // to debug uncomment all debug.log 
 				for (int i = 0;i<inUseRound.Length;i++)
 				{
 					Debug.Log ("inUseRound[" + i + "] = " + inUseRound[i]);
+
 					if (inUseRound[i] == randomNumber)
-					{
 						done = false;
-					}
+
+					//If statement to check for O / Wo conflict
+					if ((inUseRound[i] == 25 && randomNumber == 42) || (inUseRound[i] == 42 && randomNumber == 25))
+						done = false;
 				}
 			}
 
@@ -250,7 +252,7 @@ public class GameController : MonoBehaviour // to debug uncomment all debug.log 
 
 	void WinScreenDisplay()
 	{
-		PlayerPrefs.SetInt("Level_01",1);
+		PlayerPrefs.SetInt("DnD_Hiragana",1);
 
 		gameSetup.DisableAll(); // Disable all clickable components
 		

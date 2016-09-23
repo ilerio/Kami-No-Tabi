@@ -274,7 +274,7 @@ public class GameController_L02 : MonoBehaviour // to debug uncomment all debug.
 	
 	void WinScreenDisplay()
 	{
-		PlayerPrefs.SetInt("Level_02", 1);
+		PlayerPrefs.SetInt("DnD_Katakana", 1);
 
 		gameSetup.DisableAll(); // Disable all clickable components
 		

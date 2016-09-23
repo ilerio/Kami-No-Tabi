@@ -121,8 +121,8 @@ public class GameControllerDnDHiragana : MonoBehaviour
 		while(wrongSpots.Count > 0)
 		{
 			int cur = wrongSpots.Pop();
-			Debug.Log("cur: " + cur);
-			Debug.Log("slots[cur:] " + slots[cur]);
+			//Debug.Log("cur: " + cur);
+			//Debug.Log("slots[cur:] " + slots[cur]);
 			slots[cur].GetComponent<Image>().color = colorRed;
 			if (slots[cur].transform.childCount > 0)
 			{
