@@ -92,7 +92,7 @@ public class GameController_L03 : MonoBehaviour
 
 		if (currentWord == null)
 		{
-			Debug.Log(currentKey.ToUpper() + "was not found in the dictionary.");
+			Debug.Log(currentKey.ToUpper() + " was not found in the dictionary.");
 		}
 		else
 			curWordLength = currentWord.Length;
@@ -111,6 +111,13 @@ public class GameController_L03 : MonoBehaviour
 		for (int i = 0; i < curWordLength; i++)
 		{
 			GameObject slot = Instantiate(this.slot);
+
+			Vector3 scale;
+			scale.x = 1f;
+			scale.y = 1f;
+			scale.z = 1f;
+			slot.transform.localScale = scale;
+
 			slot.name = currentWord[i];
 			slot.transform.SetParent(slotHolder);
 			currentSlots[i] = slot;
@@ -124,6 +131,7 @@ public class GameController_L03 : MonoBehaviour
 	public void CheckAnswer()
 	{
 		bool flag = true; 
+		Stack<int> wrongAnswerSlots = new Stack<int>();
 
 		for(int i = 0; i < currentSlots.Length; i++)
 		{
@@ -141,6 +149,7 @@ public class GameController_L03 : MonoBehaviour
 			if (currentChar.Equals(answer) == false)
 			{
 				flag = false;
+				wrongAnswerSlots.Push(i);
 			}
 		}
 
@@ -149,7 +158,7 @@ public class GameController_L03 : MonoBehaviour
 			CorrectAnswer();
 			wordCounter.text = countCurWord + " / 10";
 		} else
-			WrongAnswer();
+			WrongAnswer(wrongAnswerSlots);
 	}
 
 	void CorrectAnswer()
@@ -160,12 +169,13 @@ public class GameController_L03 : MonoBehaviour
 			Init();
 	}
 
-	void WrongAnswer()
+	void WrongAnswer(Stack<int> was)
 	{
 		Debug.Log("Wrong!");
 		shake.Shake(0.08f, 0.2f);
 		flash.Flash();
 
+		// Move Kappa closer to screen
 		Vector3 pos = kappa.transform.localPosition;
 		pos.y -= 1.15f;
 		kappa.transform.localPosition = pos;
@@ -175,12 +185,26 @@ public class GameController_L03 : MonoBehaviour
 		scale.y += 0.16f;
 		kappa.transform.localScale = scale;
 
+		// Decrement Life and Remove 1 Heart
 		lives -= 1;
 		Debug.Log("lives = " + lives);
 		
 		heartHolder.GetChild(lives).gameObject.SetActive(false);
 
-		if (lives <= 0) // Die
+
+		// Highlight slots with wrong answers in them
+		Color colorRed;
+		colorRed = Color.red;
+		colorRed.a = 0.393f;
+		
+		while(was.Count > 0)
+		{
+			int cur = was.Pop();
+			currentSlots[cur].GetComponent<Image>().color = colorRed;
+		}
+
+		// Die opperation if life < 0
+		if (lives <= 0) 
 		{
 			UI_Interface.SetActive(false);
 			UI_DnD.SetActive(false);
@@ -193,6 +217,7 @@ public class GameController_L03 : MonoBehaviour
 	void win()
 	{
 		Debug.Log("Win");
+		PlayerPrefs.SetInt("Done",1);
 
 		UI_Interface.SetActive(false);
 		UI_DnD.SetActive(false);

@@ -26,6 +26,15 @@ public class DropZone_Katakana : MonoBehaviour, IDropHandler, IPointerEnterHandl
 		Dragable dropedObject = eventData.pointerDrag.GetComponent<Dragable>();
 		if (dropedObject != null && !occupied)
 		{
+			// removing the object from the previous DropZone && unregistering it
+			if (dropedObject.GetDropZoneParentK() != null)
+			{
+				DropZone_Katakana dod = dropedObject.GetDropZoneParentK(); // Droped Object Dropzone
+				int dodsn = dod.GetSlotNumber(); // Droped Object Dropzone Slot Number
+				dod.objectInThisSpot = null;
+				GCDnD.unsetInputKatakana(dodsn);
+			}
+
 			dropedObject.parentToReturnTo = this.transform;
 			objectInThisSpot = eventData.pointerDrag;
 			
@@ -47,9 +56,9 @@ public class DropZone_Katakana : MonoBehaviour, IDropHandler, IPointerEnterHandl
 			objectInThisSpot.GetComponent<Dragable>().parentToReturnTo = dropedObject.parentToReturnTo;
 			objectInThisSpot.transform.SetParent(dropedObject.parentToReturnTo);
 			objectInThisSpot.transform.SetSiblingIndex(dropedObject.GetPlaceholderSiblingIndex());
-			if (dropedObject.GetDropZoneParent() != null)
+			if (dropedObject.GetDropZoneParentK() != null)
 			{
-				slotNum = dropedObject.GetDropZoneParent().GetSlotNumber();
+				slotNum = dropedObject.GetDropZoneParentK().GetSlotNumber();
 				GCDnD.setInputHirgana(slotNum,objectInThisSpot.name);
 			}
 			dropedObject.parentToReturnTo.transform.GetComponent<Image>().color = colorWhite;

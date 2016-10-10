@@ -72,13 +72,13 @@ PlayerSettings:
     16:9: 0
     Others: 0
   bundleIdentifier: com.UBCOJapaneseLanguageGames.KamiNoTabi
-  bundleVersion: 2.2
+  bundleVersion: 3.1
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   productGUID: cc935a4f9c9d6f44d966e4d6a34c225d
-  AndroidBundleVersionCode: 6
+  AndroidBundleVersionCode: 10
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
   aotOptions: 

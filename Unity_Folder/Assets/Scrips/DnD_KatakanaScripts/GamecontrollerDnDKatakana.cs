@@ -102,6 +102,8 @@ public class GamecontrollerDnDKatakana : MonoBehaviour
 	{
 		inputHiragana[pos] = name;
 
+		Debug.Log("Slot[" + pos + "] registered w/ " + name);
+
 		bool temp = true;
 		foreach (string s in inputHiragana)
 		{
@@ -109,6 +111,15 @@ public class GamecontrollerDnDKatakana : MonoBehaviour
 		}
 
 		if (temp == true) {AllFilledIn = true;}
+	}
+
+	public void unsetInputKatakana(int pos)
+	{
+		Debug.Log(inputHiragana[pos] + " removed form slot[" + pos + "]");
+		
+		inputHiragana[pos] = "?";
+		
+		AllFilledIn = false;
 	}
 
 	public void WrongAnswer()
@@ -122,6 +133,9 @@ public class GamecontrollerDnDKatakana : MonoBehaviour
 		{
 			int cur = wrongSpots.Pop();
 			slots[cur].GetComponent<Image>().color = colorRed;
+			slots[cur].GetComponent<DropZone_Katakana>().objectInThisSpot = null;
+			if (slots[cur].transform.childCount > 0)
+				unsetInputKatakana(cur);
 			if (slots[cur].transform.childCount != 0)
 			{
 				wrong[cur] = slots[cur].transform.GetChild(0);

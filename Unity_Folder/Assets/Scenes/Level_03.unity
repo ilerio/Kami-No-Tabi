@@ -1367,8 +1367,8 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: .185000002}
   m_AnchorMax: {x: 1, y: .5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2.5}
+  m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: .5, y: .5}
 --- !u!82 &346202205
 AudioSource:
@@ -1620,10 +1620,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 356109688}
   m_RootOrder: 3
-  m_AnchorMin: {x: .429437816, y: .0400000028}
-  m_AnchorMax: {x: .5, y: .170000002}
-  m_AnchoredPosition: {x: 1, y: -.496999741}
-  m_SizeDelta: {x: 1, y: -1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: .207497269}
+  m_AnchoredPosition: {x: -322, y: 0}
+  m_SizeDelta: {x: -551, y: -45}
   m_Pivot: {x: 1, y: .5}
 --- !u!114 &367077052
 MonoBehaviour:
@@ -2048,8 +2048,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: .185000002}
   m_AnchorMax: {x: 1, y: .5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2.5}
+  m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &716937869
 GameObject:
@@ -3577,7 +3577,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 96c3c528c31f028478a520d8cda0e583, type: 3}
   - {fileID: 21300000, guid: df4ef42ee202e2b4ea5501006f88a3e1, type: 3}
   - {fileID: 21300000, guid: 61198802e7f41704dab4d117f7491d6b, type: 3}
-  - {fileID: 21300000, guid: a3cdd79254fee7b4889bda818590740b, type: 3}
+  - {fileID: 21300000, guid: d19c42cd97f6113449f2c49a71ab7e67, type: 3}
   - {fileID: 21300000, guid: 8a4cde5e867495544a345ce7208ef692, type: 3}
   - {fileID: 21300000, guid: 1856dfa0fa502bd46aed17838af0f4cf, type: 3}
   - {fileID: 21300000, guid: 415e3e160554dd640bb06b5c96697829, type: 3}
@@ -3597,7 +3597,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db2a2b67892854b45bdbacbb175d6866, type: 3}
   - {fileID: 21300000, guid: 44c19e0457b654a42871309eea8e6e2e, type: 3}
   - {fileID: 21300000, guid: b5da45be774117647b23ac156bc85e45, type: 3}
-  - {fileID: 21300000, guid: d3cb0ae6f43f9ff449b922497ee68e4a, type: 3}
+  - {fileID: 21300000, guid: fdadb8f806b96f74a8f72a2ee947bc60, type: 3}
   - {fileID: 21300000, guid: 9d1d8727f978deb4fa35fde0eba58e17, type: 3}
   - {fileID: 21300000, guid: 34b853217c6e8e64ba3f9f3793e073fa, type: 3}
   - {fileID: 21300000, guid: 05a000d27211b344b8adbb82a5d2758c, type: 3}

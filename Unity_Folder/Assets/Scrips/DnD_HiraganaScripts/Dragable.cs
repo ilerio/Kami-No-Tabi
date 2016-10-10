@@ -59,6 +59,11 @@ public class Dragable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
 	{
 		return parentToReturnTo.transform.GetComponent<DropZone>();
 	}
+
+	public DropZone_Katakana GetDropZoneParentK()
+	{
+		return parentToReturnTo.transform.GetComponent<DropZone_Katakana>();
+	}
 	
 	public void OnPointerDown (PointerEventData eventData)
 	{

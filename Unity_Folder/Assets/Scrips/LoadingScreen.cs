@@ -9,7 +9,6 @@ public class LoadingScreen : MonoBehaviour
 	public GameObject text;
 	public GameObject progressBar;
 
-
 	private int loadProgress = 0;
 	
 	// Use this for initialization

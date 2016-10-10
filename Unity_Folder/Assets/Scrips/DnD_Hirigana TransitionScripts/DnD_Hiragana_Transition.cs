@@ -207,7 +207,7 @@ public class DnD_Hiragana_Transition : MonoBehaviour
 		{
 			audioSource.UnPause();
 		}
-		else if (!textIsScrolling)
+		else if (!textIsScrolling && audioSource != null)
 		{
 			audioSource.Pause ();
 		}
