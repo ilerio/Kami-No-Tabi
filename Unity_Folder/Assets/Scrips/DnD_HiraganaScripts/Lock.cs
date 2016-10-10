@@ -19,10 +19,6 @@ public class Lock : MonoBehaviour
 	{
 		GCDnD = GameControllerDnDHiragana.FindObjectOfType (typeof (GameControllerDnDHiragana)) as GameControllerDnDHiragana;
 		glow = this.GetComponent<SpriteRenderer>().color;
-
-		Debug.Log("b (blue) = " + glow.b);
-		Debug.Log("g (green) = " + glow.g);
-		Debug.Log("r (red) = " + glow.r);
 	}
 
 	void Update()

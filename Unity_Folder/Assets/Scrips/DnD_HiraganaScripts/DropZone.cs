@@ -26,6 +26,15 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler
 		Dragable dropedObject = eventData.pointerDrag.GetComponent<Dragable>();
 		if (dropedObject != null && !occupied)
 		{
+			// removing the object from the previous DropZone && unregistering it
+			if (dropedObject.GetDropZoneParent() != null)
+			{
+				DropZone dod = dropedObject.GetDropZoneParent(); // Droped Object Dropzone
+				int dodsn = dod.GetSlotNumber(); // Droped Object Dropzone Slot Number
+				dod.objectInThisSpot = null;
+				GCDnD.unsetInputHiragana(dodsn);
+			}
+
 			dropedObject.parentToReturnTo = this.transform;
 			objectInThisSpot = eventData.pointerDrag;
 

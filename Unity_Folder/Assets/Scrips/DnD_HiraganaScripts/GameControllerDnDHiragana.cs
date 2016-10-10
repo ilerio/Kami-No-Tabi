@@ -102,6 +102,8 @@ public class GameControllerDnDHiragana : MonoBehaviour
 	{
 		inputHiragana[pos] = name;
 
+		Debug.Log("Slot[" + pos + "] registered w/ " + name);
+
 		bool temp = true;
 		foreach (string s in inputHiragana)
 		{
@@ -109,6 +111,15 @@ public class GameControllerDnDHiragana : MonoBehaviour
 		}
 
 		if (temp == true) {AllFilledIn = true;}
+	}
+
+	public void unsetInputHiragana(int pos)
+	{
+		Debug.Log(inputHiragana[pos] + " removed form slot[" + pos + "]");
+
+		inputHiragana[pos] = "?";
+
+		AllFilledIn = false;
 	}
 
 	public void WrongAnswer()
@@ -121,9 +132,10 @@ public class GameControllerDnDHiragana : MonoBehaviour
 		while(wrongSpots.Count > 0)
 		{
 			int cur = wrongSpots.Pop();
-			//Debug.Log("cur: " + cur);
-			//Debug.Log("slots[cur:] " + slots[cur]);
 			slots[cur].GetComponent<Image>().color = colorRed;
+			slots[cur].GetComponent<DropZone>().objectInThisSpot = null;
+			if (slots[cur].transform.childCount > 0)
+				unsetInputHiragana(cur);
 			if (slots[cur].transform.childCount > 0)
 			{
 				wrong[cur] = slots[cur].transform.GetChild(0);

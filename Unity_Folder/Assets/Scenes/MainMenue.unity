@@ -167,7 +167,6 @@ GameObject:
   - 222: {fileID: 151426721}
   - 114: {fileID: 151426720}
   - 114: {fileID: 151426723}
-  - 114: {fileID: 151426722}
   m_Layer: 5
   m_Name: DnD Hiragana
   m_TagString: Untagged
@@ -221,19 +220,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 151426718}
---- !u!114 &151426722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 151426718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8eb00a24c373842bb89db48c447eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ui: {fileID: 2132178374}
-  sceneChoice: DnD_Hiragana
 --- !u!114 &151426723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,15 +259,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 151426722}
-        m_MethodName: LoadSceneChoice
-        m_Mode: 1
+      - m_Target: {fileID: 1658511823}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: DnD_Hiragana
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -358,7 +344,6 @@ GameObject:
   - 222: {fileID: 422690016}
   - 114: {fileID: 422690015}
   - 114: {fileID: 422690018}
-  - 114: {fileID: 422690017}
   m_Layer: 5
   m_Name: 'Level_02: Katakana'
   m_TagString: Untagged
@@ -412,19 +397,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 422690013}
---- !u!114 &422690017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 422690013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8eb00a24c373842bb89db48c447eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ui: {fileID: 2132178374}
-  sceneChoice: Level_02
 --- !u!114 &422690018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,15 +436,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 422690017}
-        m_MethodName: LoadSceneChoice
-        m_Mode: 1
+      - m_Target: {fileID: 1658511823}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level_02
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -481,6 +453,72 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 165470, guid: fd09f599f4080784aacd14969bbd28ec, type: 2}
   m_PrefabInternal: {fileID: 2020419447}
+--- !u!1 &509762898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 180758, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 509762901}
+  - 222: {fileID: 509762900}
+  - 132: {fileID: 509762899}
+  m_Layer: 0
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &509762899
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13228736, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509762898}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Loading Progress
+  m_Anchor: 7
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: f3ecb3927a464bd47b142abc19e03c59, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 50
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!222 &509762900
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22205326, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509762898}
+--- !u!224 &509762901
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22458986, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509762898}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2112795285}
+  m_RootOrder: 1
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: .5, y: .5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: .5, y: .5}
 --- !u!1 &592291511
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,7 +584,6 @@ GameObject:
   - 222: {fileID: 651757921}
   - 114: {fileID: 651757920}
   - 114: {fileID: 651757923}
-  - 114: {fileID: 651757922}
   m_Layer: 5
   m_Name: Level_03
   m_TagString: Untagged
@@ -600,19 +637,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 651757918}
---- !u!114 &651757922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 651757918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8eb00a24c373842bb89db48c447eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ui: {fileID: 2132178374}
-  sceneChoice: Level_03
 --- !u!114 &651757923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,15 +676,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 651757922}
-        m_MethodName: LoadSceneChoice
-        m_Mode: 1
+      - m_Target: {fileID: 1658511823}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level_03
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -755,6 +779,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699397275}
+--- !u!1 &760940770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 103486, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 760940771}
+  - 131: {fileID: 760940772}
+  m_Layer: 0
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &760940771
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 478534, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 760940770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2112795285}
+  m_RootOrder: 0
+--- !u!131 &760940772
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13188282, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 760940770}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: bfdd34d82bce3c74382a1477a47b5be4, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &772299268
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,6 +1006,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bobSpeed: .150000006
+--- !u!1 &864810855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 149318, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 864810856}
+  - 131: {fileID: 864810857}
+  m_Layer: 0
+  m_Name: ProgressBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &864810856
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 491680, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 864810855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .25, z: 0}
+  m_LocalScale: {x: 1, y: .0500000007, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2112795285}
+  m_RootOrder: 2
+--- !u!131 &864810857
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13137206, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 864810855}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 520b7b22ba2c3124e9e4e405104819f8, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: 1}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &942539175
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,7 +1306,6 @@ GameObject:
   - 222: {fileID: 1189886141}
   - 114: {fileID: 1189886140}
   - 114: {fileID: 1189886144}
-  - 114: {fileID: 1189886143}
   m_Layer: 5
   m_Name: DnD Katakana
   m_TagString: Untagged
@@ -1240,19 +1359,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
---- !u!114 &1189886143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1189886139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8eb00a24c373842bb89db48c447eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ui: {fileID: 2132178374}
-  sceneChoice: DnD_Katakana
 --- !u!114 &1189886144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1292,15 +1398,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1189886143}
-        m_MethodName: LoadSceneChoice
-        m_Mode: 1
+      - m_Target: {fileID: 1658511823}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: DnD_Katakana
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1502,48 +1608,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1467282727}
---- !u!1001 &1658511822
-Prefab:
+--- !u!114 &1658511823
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 409222, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409222, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409222, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409222, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409222, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409222, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409222, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 409222, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 11442002, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2112795284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a241d76060300841b30c1a992ae7227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: 
+  backgroung: {fileID: 760940770}
+  text: {fileID: 509762898}
+  progressBar: {fileID: 864810855}
 --- !u!1 &1699835282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,7 +1832,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 2132178374}
-  sceneChoice: Level_01
 --- !u!82 &1848214530
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1899,7 +1978,6 @@ GameObject:
   - 222: {fileID: 2001519967}
   - 114: {fileID: 2001519966}
   - 114: {fileID: 2001519969}
-  - 114: {fileID: 2001519968}
   m_Layer: 5
   m_Name: 'Level_01: Hiragana'
   m_TagString: Untagged
@@ -1953,19 +2031,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2001519964}
---- !u!114 &2001519968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2001519964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8eb00a24c373842bb89db48c447eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ui: {fileID: 2132178374}
-  sceneChoice: Level_01
 --- !u!114 &2001519969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2005,15 +2070,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2001519968}
-        m_MethodName: LoadSceneChoice
-        m_Mode: 1
+      - m_Target: {fileID: 1658511823}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level_01
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2536,9 +2601,44 @@ Prefab:
       propertyPath: m_FontData.m_FontSize
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 22320572, guid: fd09f599f4080784aacd14969bbd28ec, type: 2}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd09f599f4080784aacd14969bbd28ec, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2112795284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 175444, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2112795285}
+  - 114: {fileID: 1658511823}
+  m_Layer: 0
+  m_Name: LoadingScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2112795285
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 409222, guid: 3efed9b9e63a75d4cb1cd3c1eb0dce84, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2112795284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 760940771}
+  - {fileID: 509762901}
+  - {fileID: 864810856}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &2128123666
 GameObject:
   m_ObjectHideFlags: 0

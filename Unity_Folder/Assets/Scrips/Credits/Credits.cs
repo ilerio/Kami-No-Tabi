@@ -10,9 +10,14 @@ public class Credits : MonoBehaviour
 	private bool fadeBegun = false;
 	private bool exit = false;
 
+	void Start()
+	{
+		this.GetComponent<Rigidbody2D>().velocity = new Vector2(0,speed);
+	}
+
 	void Update () 
 	{
-		this.transform.Translate(Vector3.up * Time.deltaTime * speed);
+		//this.transform.Translate(Vector3.up * Time.deltaTime * speed); // This seems to have a variable speed depending on screen size
 
 		if(exit)
 		{
@@ -21,8 +26,9 @@ public class Credits : MonoBehaviour
 			beginFade();
 			if(musicPlayer.volume <= 0 && quit <= 0)
 			{
+				exit = false; // to prevent a double call
 				Debug.Log("Exit Called.");
-				Invoke("BackToMainMenu",0.001f);
+				Invoke("BackToMainMenu",0.01f);
 			}
 		}
 	}

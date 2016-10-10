@@ -19,10 +19,6 @@ public class Lock_Katakana : MonoBehaviour
 	{
 		GCDnD = GamecontrollerDnDKatakana.FindObjectOfType (typeof (GamecontrollerDnDKatakana)) as GamecontrollerDnDKatakana;
 		glow = this.GetComponent<SpriteRenderer>().color;
-		
-		Debug.Log("b (blue) = " + glow.b);
-		Debug.Log("g (green) = " + glow.g);
-		Debug.Log("r (red) = " + glow.r);
 	}
 
 	void Update()
