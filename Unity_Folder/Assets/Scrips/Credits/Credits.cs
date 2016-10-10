@@ -12,6 +12,10 @@ public class Credits : MonoBehaviour
 
 	void Start()
 	{
+		// This is to adress a slowdown in speen when ported to Android
+		#if UNITY_ANDROID
+		speed = 100f;
+		#endif
 		this.GetComponent<Rigidbody2D>().velocity = new Vector2(0,speed);
 	}
 

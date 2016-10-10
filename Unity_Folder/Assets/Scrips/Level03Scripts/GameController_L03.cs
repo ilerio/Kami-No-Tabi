@@ -112,11 +112,14 @@ public class GameController_L03 : MonoBehaviour
 		{
 			GameObject slot = Instantiate(this.slot);
 
+			//This is to resolve a scaling issues on level 3
+			#if UNITY_ANDROID
 			Vector3 scale;
-			scale.x = 1f;
-			scale.y = 1f;
+			scale.x = 2f;
+			scale.y = 2f;
 			scale.z = 1f;
 			slot.transform.localScale = scale;
+			#endif
 
 			slot.name = currentWord[i];
 			slot.transform.SetParent(slotHolder);
